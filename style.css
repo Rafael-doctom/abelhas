@@ -1,0 +1,101 @@
+/* DISPLAY FLEX: serve para modelar o site, se ele vai ficar como uma coluna ou um do lado do outro - Quando você dá um display flex em algo, automaticamnte ele vai ficar um do lado do outro;
+
+Exemplo: Antes de escrever o display e justify-content: a LOGO e o MENU estavam grudado um do lado do outro.
+*/
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+#header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #F3E966;
+    padding: 10px;
+}
+
+.menu ul{
+    display: flex;
+
+}
+.menu ul a {
+    text-decoration: none;
+    list-style: none;
+    margin-left: 20px;
+    font-size: 22px;
+    color: black;
+}
+
+/* IMAGEM DE FUNDO */
+.imagem-de-fundo{
+    background-size: cover;
+    background: url('abelhas.jpg');
+    height: 95vh;
+}
+
+/* APRESENTAÇÃO */
+.apresentacao{
+    margin-top: 20px;
+    text-align: center;
+}
+.apresentacao p{
+    /* text-align: justify; */
+    margin: 0 auto;
+    width: 800px;
+    padding: 10px;
+}
+
+/* PRODUTOS */
+
+.produtos{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.produtos .lista-de-produtos img{
+    width: 200px;
+    padding: 10px;
+}
+.canal{
+    margin: 20px;
+}
+.canal a{
+    background: orangered;
+    font-size: 20px;
+    height: 50px;
+    border:0px;
+    width: 200px;
+    padding: 10px;
+    text-decoration: none;
+    color:white;
+}
+.nossas-abelhas{
+    margin-top: 20px;
+
+    text-align: center;
+}
+.nossas-abelhas  img{
+    width: 200px;
+    padding: 10px;
+}
+
+
+
+@media(max-width:425px){
+    .apresentacao p{
+    /* text-align: justify; */
+    margin: 0 auto;
+    width: 310px;
+    padding: 10px;
+}
+    .produtos .lista-de-produtos{
+        display: flex;
+        
+        flex-direction: column;
+        
+    }
+    
+
+}
